@@ -1,0 +1,17 @@
+android_app {
+    name: "my_led_control_service_app",
+    srcs: [
+        "src/**/*.kt",
+        "aidl/mydevice/*.aidl"
+    ],
+    manifest: "AndroidManifest.xml",
+    sdk_version: "system_current",
+    privileged: true,
+    resource_dirs: ["res"],
+    static_libs: [
+        "led_interface",  // chắc chắn có trong tree
+    ],
+    aidl: {
+        include_dirs: ["vendor/my_service/app/aidl"],
+    },
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <!-- Vòng tròn trạng thái LED -->
+    <ImageView
+        android:id="@+id/led_status_circle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/circle_white" />
+
+    <!-- Nút BẬT LED -->
+    <Button
+        android:id="@+id/btn_turn_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_turn_on"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Nút TẮT LED -->
+    <Button
+        android:id="@+id/btn_turn_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_turn_off" />
+</LinearLayout>
