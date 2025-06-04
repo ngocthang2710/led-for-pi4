@@ -1,0 +1,1 @@
+cmd_/home/thangnn/aosp/kernel/kernel/module/led/modules.order := {   echo /home/thangnn/aosp/kernel/kernel/module/led/new_led.ko; :; } | awk '!x[$$0]++' - > /home/thangnn/aosp/kernel/kernel/module/led/modules.order

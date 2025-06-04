@@ -1,0 +1,16 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+    compatible = "raspberrypi,4-model-b";
+
+    fragment@0 {
+        target-path = "/";
+        __overlay__ {
+            led_gpio23: led_gpio23 {
+                compatible = "led-gpio-device";
+                gpios = <&gpio 23 0>;   // GPIO23, flags = 0 (không pull-up/pull-down)
+            };
+        };
+    };
+};

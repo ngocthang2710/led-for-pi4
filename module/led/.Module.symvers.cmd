@@ -1,0 +1,1 @@
+cmd_/home/thangnn/aosp/kernel/kernel/module/led/Module.symvers := sed 's/\.ko$$/\.o/' /home/thangnn/aosp/kernel/kernel/module/led/modules.order | scripts/mod/modpost -m -a  -o /home/thangnn/aosp/kernel/kernel/module/led/Module.symvers -e    -w -T -

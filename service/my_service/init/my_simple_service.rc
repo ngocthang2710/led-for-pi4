@@ -1,6 +1,0 @@
-service my_simple_service /system/bin/my_simple_service
-    class main
-    user root
-    group root
-    socket my_simple_service stream 660 root root
-    oneshot

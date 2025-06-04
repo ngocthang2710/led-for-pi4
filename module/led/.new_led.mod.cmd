@@ -1,0 +1,1 @@
+cmd_/home/thangnn/aosp/kernel/kernel/module/led/new_led.mod := printf '%s\n'   new_led.o | awk '!x[$$0]++ { print("/home/thangnn/aosp/kernel/kernel/module/led/"$$0) }' > /home/thangnn/aosp/kernel/kernel/module/led/new_led.mod
